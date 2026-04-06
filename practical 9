@@ -33,3 +33,48 @@ awesome/6.0.0/css/all.min.css">
 </div>
 </body>
 </html>
+
+
+
+
+CSS CODE
+
+
+body {
+margin: 0;
+font-family:'poppins';
+text-align:center;
+ 
+}
+header {
+ background:lightpink;
+ color: black;
+ padding: 15px;
+width:100%;
+}
+.container {
+ column-count: 3;
+ padding: 10px;
+}
+.box {
+ background: lightblue;
+ margin: 20px;
+ padding: 10px;
+ display: inline-block;
+ width: 20%;
+ border-radius: 8px;
+ animation: fade 1s;
+ transition: 0.3s;
+}
+.box:hover {
+ transform: translateY(-100px);
+}
+@keyframes fade {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@media(max-width: 768px) {
+ .container {
+ column-count: 1;
+ }
+}
